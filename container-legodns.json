@@ -14,7 +14,7 @@
     {
       "type": "docker",
       "commit": true,
-      "image": "{{user `from`}}",
+      "image": "{{user `from_image`}}",
       "run_command": ["-dit", "--name", "{{user `app`}}{{user `tag`}}", "{{.Image}}", "/bin/bash"]
     }
   ],

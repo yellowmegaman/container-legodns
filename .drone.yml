@@ -37,8 +37,9 @@ steps:
   image: yellowmegaman/container-packer:1.3.4
   environment:
     DOCKER_HOST: tcp://dockerhost:2375
-    FROM_IMAGE: "google/cloud-sdk:235.0.0-slim"
+    FROM_IMAGE: "google/cloud-sdk"
     LEGO_VERSION: 2.2.0
+    GCLOUD_VERSION: 235.0.0-slim
     PROJECT_NAME: yellowmegaman
     DOCKER_USERNAME:
       from_secret: docker_username

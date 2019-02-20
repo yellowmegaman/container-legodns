@@ -1,14 +1,14 @@
 {
   "variables": {
     "app":             "{{env `DRONE_REPO_NAME`}}",
-    "from_image":      "{{env `FROM_IMAGE`}}",
+    "from_image":      "{{env `FROM_IMAGE`}}:{{env `GCLOUD_VERSION`}}",
     "lego_ver":        "{{env `LEGO_VERSION`}}",
     "project_name":    "{{env `PROJECT_NAME`}}",
     "docker_username": "{{env `DOCKER_USERNAME`}}",
     "docker_password": "{{env `DOCKER_PASSWORD`}}",
     "quay_username":   "{{env `QUAY_USERNAME`}}",
     "quay_password":   "{{env `QUAY_PASSWORD`}}",
-    "tag":             "{{env `LEGO_VERSION`}}"
+    "tag":             "{{env `GCLOUD_VERSION`}}"
   },
   "builders":[
     {
